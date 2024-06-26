@@ -49,6 +49,7 @@
 .location{
     color: white;
     font-size: 40px;
+    text-align: center;
 }
 .weatherdata{
     width: 100%;
@@ -73,4 +74,9 @@ font-size: 16px;
 }
 .col2{
     margin-left: 10px;
+}
+@media(max-width:800px){
+    .Weather{
+        width: 400px;
+    }
 }

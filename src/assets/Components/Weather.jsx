@@ -55,7 +55,7 @@ const Weather = () => {
   },[])
   
   useEffect(()=>{
-      if(present==="Partly cloudy"){
+      if(present==="Partly Cloudy"){
         setimagea(cloud)
       }
       else if (present==="Light rain shower" || present==="Mist" ||present==="Patchy rain nearby"){setimagea(drizzle)}
