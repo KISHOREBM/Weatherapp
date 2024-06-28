@@ -78,8 +78,7 @@ font-size: 16px;
 }
 @media(max-width:800px){
     .Weather{
-        width: 80%;
-        height: 80%;
+        width: 400px;
     }
     .location{
         font-size: 30px;
