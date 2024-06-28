@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 500px;
 }
 .dontkn{
     display: flex;
@@ -77,7 +78,7 @@ font-size: 16px;
 }
 @media(max-width:800px){
     .Weather{
-        width: 400px;
+        width: 300px;
     }
     .location{
         font-size: 30px;
