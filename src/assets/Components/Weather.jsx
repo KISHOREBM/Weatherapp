@@ -58,7 +58,7 @@ const Weather = () => {
       if(present==="Partly Cloudy"){
         setimagea(cloud)
       }
-      else if (present==="Light rain shower" || present==="Mist" ||present==="Patchy rain nearby" || present==="Partly cloudy"){setimagea(drizzle)}
+      else if (present==="Light rain shower" || present==="Mist" ||present==="Patchy rain nearby"){setimagea(drizzle)}
       else{setimagea(clearimg)}
   },[present])
   function getit(){
