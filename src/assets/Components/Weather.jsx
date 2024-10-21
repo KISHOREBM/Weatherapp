@@ -13,8 +13,8 @@ const Weather = () => {
   const [temp,settemp]=useState('Null')
   const [present,setpre]=useState("Partly cloudy")
   const [imagea,setimagea]=useState(clearimg)
-  const [country,setcount]=useState("Null")
-  const [region, setregion] = useState("")
+  const [country,setcount]=useState("india")
+  const [region, setregion] = useState("Karnataka")
   const [searchname,setsearch] = useState("")
   const search12=async()=>{
         const url=`https://api.weatherapi.com/v1/current.json?key=1871891723a74f63b07132925242506&q=${searchname}`
