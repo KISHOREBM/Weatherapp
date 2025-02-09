@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+.form{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
 .Weather{
     font-family: 'poppins';
     place-self: center;
@@ -9,17 +18,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: auto;
+    max-width: 600px;
 }
 .dontkn{
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
+
 .search{
     display: flex;
     align-items: center;
     gap: 12px;
+    width: 90%;
 }
 .search input{
     height: 50px;
@@ -30,6 +42,7 @@
     color: #626262;
     background-color: #ebfffc;
     font-size: 18px;
+    width: 90%;
 }
 .search img{
     width: 50px;
@@ -51,6 +64,8 @@
     color: white;
     font-size: 40px;
     text-align: center;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 .weatherdata{
     width: 100%;
@@ -79,8 +94,22 @@ font-size: 16px;
 @media(max-width:800px){
     .Weather{
         width: auto;
+        flex-wrap: wrap;
     }
     .location{
         font-size: 30px;
     }
+}
+input[type="submit"]{
+    width: 30%;
+    color: white;
+    background-image: linear-gradient(45deg,#2f4680,#500ae4);
+    padding: 10px;
+    border-radius: 23px;
+    cursor: pointer;
+    
+}
+button{
+    border: none;
+    background: transparent;
 }

@@ -16,7 +16,8 @@ const Weather = () => {
   const [country,setcount]=useState("india")
   const [region, setregion] = useState("Karnataka")
   const [searchname,setsearch] = useState("")
-  const search12=async()=>{
+  const search12=async(e)=>{
+        e.preventDefault();
         const url=`https://api.weatherapi.com/v1/current.json?key=1871891723a74f63b07132925242506&q=${searchname}`
         const doitkn=await fetch(url)
         const data = await doitkn.json();
@@ -74,16 +75,19 @@ const Weather = () => {
   },[present])
 
   return (
-    <div className='Weather'>
+    <form action="" className='form' onSubmit={search12}>
+      <div className='Weather'>
       <div className="search">
-        <input type="text" name="" id="val" placeholder='search' value={searchname} onChange={(e)=>{setsearch(e.target.value)}}/>
-        <img src={search} alt="" onClick={()=>{search12()}}/>
+        <input type="text" name="" id="val" placeholder='search' value={searchname} onChange={(e)=>{setsearch(e.target.value)}} list='city-options' />
+        <button type='submit'>
+        <img src={search} alt=""   />
+        </button>
       </div>
       <div className='dontkn'>
         <img src={imagea} alt="" className='weatherimg' id="img"/>
         <p className='temp'>{temp}&deg;C</p>
         <div className='location'>
-          <p >{cityname},{region},{country}</p>
+          <p >{cityname} {region} {country}</p>
           <p >{present}</p>
         </div>
         <div className="weatherdata">
@@ -104,6 +108,19 @@ const Weather = () => {
         </div>
       </div>
     </div>
+    <datalist id="city-options">
+      <option value="New York" />
+      <option value="Los Angeles" />
+      <option value="London" />
+      <option value="Tokyo" />
+      <option value="Paris" />
+      <option value="Bangalore" />
+      <option value="Koppal" />
+      <option value="Shivamugga" />
+      <option value="Bidar" />
+
+    </datalist>
+    </form>
   )
 }
 

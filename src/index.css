@@ -7,3 +7,8 @@
    min-height: 100vh;
    display: grid;
 }
+/* Hide the dropdown arrow in Chrome, Edge, Safari */
+input::-webkit-calendar-picker-indicator {
+   display: none !important;
+   -webkit-appearance: none;
+}
