@@ -116,7 +116,7 @@ const Weather = () => {
       <option value="Paris" />
       <option value="Bangalore" />
       <option value="Koppal" />
-      <option value="Shivamugga" />
+      <option value="Shivamogga" />
       <option value="Bidar" />
 
     </datalist>
